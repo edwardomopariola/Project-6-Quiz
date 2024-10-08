@@ -1,20 +1,12 @@
-function check() {
+let submit = document.getElementById("btn");
+let question1 = "Barack Hussein Obama"
+let question2 = "George Washington"
+let question3 = "Abraham Lincoln"
 
-let question1 = document.quiz.question1.value;
-let question2 = document.quiz.question2.value;
-let question3 = document.quiz.question3.value;
-let quesOneAns = "Barack Hussein Obama"
-let quesTwoAns = "George Washington"
-let quesThreeAns = "Abraham Lincoln"
-
+document.getElementById("btn").addEventListener('click', function(event) {
+    event.preventDefault()
     if (question1 == "Barack Hussein Obama") {
-        document.getElementById("correctAnswer").innerHTML = `Correct ${quesOneAns}. was the correct Answer`
+        output.innerHTML = `Correct ${question1}. was the correct answer`
     }
-    else {
-        document.getElementById("correctAnswer").innerHTML = `Incorrect ${quesOneAns}. was the correct Answer`
-    }
-}
-
-
-
+})
     
