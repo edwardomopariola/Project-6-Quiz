@@ -1,18 +1,29 @@
 
-    function check() {
+    function check(event) {
+        event.preventDefault()
         const answer1 = document.querySelector('input[name="Question1"]:checked');
         const answer2 = document.querySelector('input[name="Question2"]:checked');
         const answer3 = document.querySelector('input[name="Question3"]:checked');
         let quiz = document.getElementById("quiz");
-        let result = document.getElementById("Result");
+        let result = document.getElementById("result");
+       
+        const answer1Value = "Barack Hussein Obama"
+        const answer2Value = " Benjamin Franklin"
+        const answer3Value = "Abraham Lincoln"
 
-        const answer1Value = "Barack Huusein Obama.value"
-        const answer2Value = "George Washington.value"
-        const answer3Value = "Abraham Lincoln.value"
+         if (answer1 !== "barack hussein obama") {
+            document.getElementById("result").innerHTML = "incorrect"
+         };
 
-        if (Question1 == "Barack Hussein Obama");
-        if (Question2 == "George Washington");
-        if (Question3 == "Abraham Lincoln");
+         if (answer2 !== "benjamin franklin"); {
+            document.getElementById("result").innerHTML = "incorrect"
+         };
+
+         if (answer3 !== "abraham lincoln"); {
+            document.getElementById("result").innerHTML = "incorrect"
+         };
+
+        document.getElementById("result").innerHTML = `Question1 answer was ${answer1Value}. Question2 answer was ${answer2Value}. Question3 answer was ${answer3Value}`
 
     };
         

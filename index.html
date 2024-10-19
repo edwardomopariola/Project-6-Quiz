@@ -20,7 +20,7 @@
 
     <div class="container">
         <h1>Answer this three questions. GOOD LUCK!!!</h1>
-        <form name="quiz" id="quiz">
+        <form name="quiz" id="quiz" onsubmit="check(event)">
             <div>
                 <p>1. Who was the first black President of United State?</p>
                 <p><input type="radio" name="Question1" value="john hanson">A. John Hanson</p>
@@ -45,9 +45,9 @@
                 <p><input type="radio" name="Question4"  value="richard nixon">C. Richard Nixon</p>
                 <p><input type="radio" name="Question4"  value="george washington">D. George Washington</p>
             </div>
+            <input id="button" type="submit" value="Submit">
         </form>
-        <input id="button" type="button" value="Submit" onclick="check()">
-        <p id="Result"></p>
+        <p id="result"></p>
     </div>
             
     <script src="script.js"></script>
